@@ -30,11 +30,8 @@ html, body {
 .first-menu a:hover {
     color: #fce38a;
     text-decoration: none;
-}
-
-.first-menu a.active {
-    color: #fce38a;
     border-bottom: 3px #fce38a solid;
+    transition-duration: 400ms;
 }
 
 .first-icons a{
@@ -97,4 +94,43 @@ header {
     background: white;
     color: #fce38a;
     border-color: #fce38a;
+}
+
+.second-content {
+    text-align: center;
+}
+
+.second-content__slogan {
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 90px auto 23px;
+}
+
+.second-content__name {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.second-content__name:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 40px auto 47px;
+}
+
+.second-content__text {
+    width: 70%;
+    margin: auto;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
 }
