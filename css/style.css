@@ -4,6 +4,7 @@
 html, body {
     font-family: 'Roboto', sans-serif;
 }
+
 .first {
     background: url("../images/eagle.jpg") top center;
     background-size: cover;
@@ -34,11 +35,11 @@ html, body {
     transition-duration: 400ms;
 }
 
-.first-icons a{
+.first-icons a {
     margin-left: 42px;
 }
 
-.first-icons a:hover{
+.first-icons a:hover {
     text-decoration: none;
 }
 
@@ -133,4 +134,29 @@ header {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.second-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 15px 110px 15px;
+}
+
+.second-slider__bg {
+    width: 30%;
+    background-color: #95e1d3;
+    position: static;
+}
+
+.second-slider__item:hover {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    transition-duration: 700ms;
+}
+
+.second-slider__img {
+    width: 100%;
 }
