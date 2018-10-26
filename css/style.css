@@ -1,0 +1,100 @@
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+.first {
+    background: url("../images/eagle.jpg") top center;
+    background-size: cover;
+}
+
+.first-logo {
+    width: 86px;
+    height: 23px;
+}
+
+.first-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-menu a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.first-menu a:hover {
+    color: #fce38a;
+    text-decoration: none;
+}
+
+.first-menu a.active {
+    color: #fce38a;
+    border-bottom: 3px #fce38a solid;
+}
+
+.first-icons a{
+    margin-left: 42px;
+}
+
+.first-icons a:hover{
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.first-slider {
+    text-align: center;
+    padding: 60px 0 150px;
+}
+
+.first-slider__slogan {
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.first-slider__name {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    max-width: 802px;
+    margin: auto;
+}
+
+.first-slider__name:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 70px auto 50px;
+}
+
+.first-slider__btn {
+    height: 40px;
+    border: 3px solid #ffffff;
+    padding: 0 32px;
+    background: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-slider__btn:hover {
+    background: white;
+    color: #fce38a;
+    border-color: #fce38a;
+}
