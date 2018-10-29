@@ -101,7 +101,7 @@ header {
     text-align: center;
 }
 
-.second-content__slogan {
+.content-slogan {
     color: #333333;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -109,7 +109,7 @@ header {
     margin: 90px auto 23px;
 }
 
-.second-content__name {
+.content-name {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -117,7 +117,7 @@ header {
     text-transform: uppercase;
 }
 
-.second-content__name:after {
+.content-name:after {
     content: '';
     display: block;
     width: 60px;
@@ -160,3 +160,36 @@ header {
 .second-slider__img {
     width: 100%;
 }
+
+.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 270px;
+    background-color: #95e1d3;
+}
+
+.third-content__number {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.third-content__text {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.fourth-content {
+    text-align: center;
+}
+
