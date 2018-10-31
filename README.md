@@ -1,2 +1,0 @@
-# LandingMogoGH
-first landing

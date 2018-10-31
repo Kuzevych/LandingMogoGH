@@ -1,8 +1,14 @@
 /*font-family: 'Kaushan Script', cursive;*/
 /*font-family: 'Montserrat', sans-serif;*/
 /*font-family: 'Roboto', sans-serif;*/
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/roboto */
+
 html, body {
     font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 .first {
@@ -31,8 +37,11 @@ html, body {
 .first-menu a:hover {
     color: #fce38a;
     text-decoration: none;
+}
+
+.first-menu a.active {
+    color: #fce38a;
     border-bottom: 3px #fce38a solid;
-    transition-duration: 400ms;
 }
 
 .first-icons a {
@@ -97,99 +106,165 @@ header {
     border-color: #fce38a;
 }
 
-.second-content {
+.about {
+    padding: 90px 0 110px;
     text-align: center;
 }
 
-.content-slogan {
+.about__bg {
+    position: relative;
+    background-color: #95e1d3;
+}
+
+.about__pics-item {
+    position: relative;
+}
+
+.about__pics-item:hover {
+    right: 10px;
+    bottom: 10px;
+}
+
+.about__hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__pics-item:hover .about__hover {
+    display: flex;
+}
+
+.about__hover-text {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.stat {
+    background-color: #95e1d3;
+}
+
+.stat__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat__item {
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255, 0.3);
+    width: 20%;
+    padding: 90px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.stat__item:first-child {
+    border-right: 1px solid rgba(255,255,255, 0.3);
+}
+
+.stat__item-number {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.stat__item-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section__title {
     color: #333333;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: 400;
-    margin: 90px auto 23px;
+    text-align: center;
 }
 
-.content-name {
+.section__name {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.content-name:after {
+.section__name:after {
     content: '';
     display: block;
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 40px auto 47px;
+    margin: 40px auto 60px;
 }
 
-.second-content__text {
-    width: 70%;
-    margin: auto;
+.section__text {
     color: #999999;
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 400;
     line-height: 24px;
-}
-
-.second-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 100px 15px 110px 15px;
-}
-
-.second-slider__bg {
-    width: 30%;
-    background-color: #95e1d3;
-    position: static;
-}
-
-.second-slider__item:hover {
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    transition-duration: 700ms;
-}
-
-.second-slider__img {
-    width: 100%;
-}
-
-.third {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 270px;
-    background-color: #95e1d3;
-}
-
-.third-content__number {
     text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72px;
-    font-weight: 700;
-    text-transform: uppercase;
+    padding: 0 60px 100px;
 }
 
-.third-content__text {
-    text-align: center;
-    color: white;
+.services {
+    padding: 90px 0 60px;
+}
+
+.services__item {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.services__name {
+    color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
+.services__text {
+    color: #999999;
+    font-size: 15px;
+    line-height: 24px;
+}
 
-.fourth-content {
+.services__line {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.design {
+    background: url('../images/design/design_bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 90px 0 0;
+}
+
+.design__body {
     text-align: center;
+    max-width: 450px;
+    position: relative;
+    margin: auto;
 }
 
+.design__iphone {
+    position: absolute;
+    bottom: -100px;
+    right: -160px;
+}
+
+.wedo {
+    padding: 90px 0 110px;
+}
