@@ -1,0 +1,40 @@
+.border {
+  border: 1px #000000 solid;
+  padding: 20px;
+  background: yellow;
+}
+body {
+  background: #eeeeee;
+}
+.block {
+  border: 1px #000000 solid;
+  padding: 20px;
+  background: yellow;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.block__title {
+  color: brown;
+  font-size: 36px;
+}
+.block__text {
+  border: 1px #000000 solid;
+  background: yellow;
+  margin-bottom: 22px;
+  padding: 20px;
+}
+.block__text a {
+  color: red;
+  text-decoration: none;
+  border-bottom: 2px dashed red;
+  font-size: 21px;
+}
+.block__text a:hover {
+  border-bottom-color: transparent;
+}
+.inform {
+  border: 1px #000000 solid;
+  padding: 20px;
+  background: yellow;
+}
